@@ -1,8 +1,8 @@
-version: '3'
+version: '3'  #도커 엔진
 services:
   redis-server:
     image: 'redis'
   node-app:
-    build: .
+    build: . 
     ports:
       - '5000:8082'
